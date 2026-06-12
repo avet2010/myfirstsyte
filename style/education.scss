@@ -1,0 +1,78 @@
+.education {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background: #0a0f1f;
+  color: #fff;
+
+  &_container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &_glux {
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-size: 3rem;
+      margin: 1rem 0;
+      color: #4da3ff;
+    }
+
+    p {
+      color: #9ca3af;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  &_glux {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  &_jamanak {
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+.education-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(18, 25, 48, 0.8);
+  border: 1px solid rgba(77, 163, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: #4da3ff;
+    box-shadow: 0 10px 30px rgba(77, 163, 255, 0.2);
+  }
+
+  &_tari {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(77, 163, 255, 0.15);
+    color: #4da3ff;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  p {
+    color: #b7c0d1;
+    line-height: 1.7;
+  }
+}

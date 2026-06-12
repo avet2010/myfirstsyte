@@ -1,0 +1,108 @@
+main {
+    width: 100%;
+    height: 100vh;
+    background: black;
+
+
+    .box {
+        padding-top: 123px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        .box_block {
+            width: 30%;
+            height: 100%;
+           
+            
+            color: white;
+
+            // text-align: center;
+            hr {
+                width: 100px;
+                border: #1d7cff;
+                padding: 2px;
+            }
+
+            >h1>span {
+                color: #1d7cff;
+            }
+
+           > img{
+            width: 100%;
+            height: 50px;
+
+           @include tabletmini{
+            width: 46%;
+            height: 40px;
+           }
+           @include mobile{
+            width: 46%;
+           }
+            }
+
+            @include tablet{
+                width: 280px;
+            }
+
+            @include tabletmini{
+                width: 100%;
+            }
+            @include mobile{
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+        .nkar {
+            width: 70%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                // object-fit: cover;
+
+                
+
+                @include tabletmini{
+                   
+                    padding-top: 70px;
+                }
+
+                 @include mobile{
+                    margin: 90px 0 0 ;
+                 }
+            }
+
+            @include tablet{
+           
+                height: 400px;
+            }
+
+            @include tabletmini{
+                width: 100%;
+                position: relative;
+                bottom: 10%;
+            }
+            @include mobile{
+                width: 100%;
+                
+                height: 300px;
+            }
+        }
+@include tabletmini{
+            height: 120vh;
+            flex-direction: column;
+            background: black;
+}
+        @include mobile{
+            height: 110vh;
+            flex-direction: column;
+            background: black;
+           
+        }
+    }
+    
+}
