@@ -1,0 +1,66 @@
+.about {
+    min-height: 100vh;
+    padding: 120px 10%;
+    background: #050816;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .about-container {
+        max-width: 900px;
+    }
+
+    .section-tag {
+        color: #2f8cff;
+        letter-spacing: 4px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 56px;
+        margin: 15px 0 40px;
+        font-weight: 700;
+    }
+
+    p {
+        color: #b8c0d4;
+        font-size: 18px;
+        line-height: 1.9;
+        margin-bottom: 25px;
+
+        span {
+            color: #2f8cff;
+            font-weight: 700;
+        }
+    }
+
+    .gcik {
+        margin-top: 40px;
+        padding-left: 20px;
+        border-left: 4px solid #2f8cff;
+        color: #fff;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 500;
+    }
+}
+
+@include tabletmini {
+    .about {
+        padding: 80px 8%;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        blockquote {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@import "./mixin.scss";
+
+
+header {
+    width: 100%;
+    height: 90px;
+    background: rgb(2, 5, 12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 3px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+
+    >a {
+        width: 120px;
+        height: 100%;
+
+
+        @include tablet {
+            width: 70px;
+            height: auto;
+            font-size: 10px;
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+      
+    }
+
+    nav {
+        flex-grow: 0.5;
+        height: 100%;
+        padding: 10px;
+
+        @include tabletmini {
+            display: none;
+        }
+
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+
+            li {
+
+                padding: 5px 10px;
+                color: white;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    // @include tablet {
+                    //     font-size: 10px;
+                    // }
+                }
+
+                &:hover {
+                    background: var(--bs--bg_li);
+                    border-radius: 15px;
+                    transition: 1s;
+               
+
+                    a {
+                        color: white;
+
+                    }
+                }
+            }
+
+
+        }
+
+        @include tabletmini {
+            order: 3 !important;
+            flex-grow: 0;
+        }
+
+        .container-fluid {
+            width: max-content !important;
+
+            .navbar-collapse {
+                
+
+
+                @include tabletmini {
+                    position: absolute;
+                    right: -216px;
+ 
+                }
+            }
+
+            .show {
+                background: rgba(0, 0, 0, 0.375);
+               
+                gap: 10px;
+           
+      
+                transition: 2s;
+            
+                @include tabletmini {
+                    width: 144px;
+                        right: 9px;
+                            top: 90px;
+                    }
+            }
+        }
+    }
+
+    button {
+        background: var(--bs--bg_li) !important;
+        color: var(--bs--color_a) !important;
+
+        &:hover {
+            color: white !important;
+            background: var(--bs--color_a) !important;
+        }
+
+        @include tablet {
+            font-size: 10px !important;
+
+        }
+
+        @include tabletmini {
+            order: 2 !important;
+        }
+    }
+}
