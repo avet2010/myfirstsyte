@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+:root{
+    --bs--bg_li:rgb(99, 99, 243);
+    --bs--color_a:rgb(39, 39, 144);
+}
+
+
+@import "./style/header.scss";
+@import "./style/main.scss";
+@import "./style/about.scss";
+@import "./style/education.scss";
